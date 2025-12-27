@@ -4,9 +4,9 @@ data/raw/
 *.mp3
 *.wav
 
-# Keep metadata and processed features in git
-!data/metadata/
-!data/processed/*.json
+# Metadata with local paths (not portable)
+data/metadata/*.json
+data/processed/*.json
 
 # Python
 __pycache__/
@@ -38,6 +38,9 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Personal docs
+DECISIONS.md
 
 # Outputs (regenerable)
 outputs/figures/*.png
